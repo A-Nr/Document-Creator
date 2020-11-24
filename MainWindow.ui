@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>818</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Document Creator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/newPrefix/icon.ico</normaloff>:/newPrefix/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabs">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="mainDetailsTab">
+       <attribute name="title">
+        <string>Main Details</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2" columnstretch="3,0,0,0">
+        <item row="0" column="0" rowspan="2">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Include the following report sections</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QCheckBox" name="summaryCheck">
+             <property name="text">
+              <string>Summary</string>
+             </property>
+             <property name="tristate">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="legalTitleCheck">
+             <property name="text">
+              <string>Legal Title</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="leaseCheck">
+             <property name="text">
+              <string>Lease</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="searchResultsCheck">
+             <property name="text">
+              <string>Search Results</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="additionalInformationCheck">
+             <property name="text">
+              <string>Additional Information</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="surveyCheck">
+             <property name="text">
+              <string>Survey</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="stampLandTaxCheck">
+             <property name="text">
+              <string>Stamp Land Tax</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="mortgageCheck">
+             <property name="text">
+              <string>Mortgage</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="documentsCheck">
+             <property name="text">
+              <string>Documents</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="exchangeCheck">
+             <property name="text">
+              <string>Exchange and Completion</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="financialCheck">
+             <property name="text">
+              <string>Financial</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="conclusionCheck">
+             <property name="text">
+              <string>Conclusion and Next Steps</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>550</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>The Client is</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QRadioButton" name="radioButton">
+                <property name="text">
+                 <string>buying a</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_2">
+                <property name="text">
+                 <string>taking a new lease of</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_3">
+                <property name="text">
+                 <string>remortgaging a</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QRadioButton" name="radioButton_4">
+                <property name="text">
+                 <string>Freehold</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_5">
+                <property name="text">
+                 <string>Leasehold</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QRadioButton" name="radioButton_6">
+                <property name="text">
+                 <string>House</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_7">
+                <property name="text">
+                 <string>Flat</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_8">
+                <property name="text">
+                 <string>Maisonette</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_9">
+                <property name="text">
+                 <string>Garage</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_10">
+                <property name="text">
+                 <string>Land</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>The property is</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <property name="rowWrapPolicy">
+            <enum>QFormLayout::DontWrapRows</enum>
+           </property>
+           <property name="labelAlignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="formAlignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButton_11">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="radioButton_12">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="radioButton_13">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QRadioButton" name="radioButton_14">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QRadioButton" name="radioButton_15">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>leasehold but the buyer will also become a joint owner of the freehold</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>leasehold but the buyer will also get a share in the freehold company</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>leasehold but the buyer will also become a member of the freehold company</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;leasehold and there is a separate landlord but the buyer will also become a member of the management company&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>freehold but is subject to estate charges</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="peopleTab">
+       <attribute name="title">
+        <string>People</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="summaryTab">
+       <attribute name="title">
+        <string>Summary</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="legalTitleTab">
+       <attribute name="title">
+        <string>Legal Title</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="leaseTab">
+       <attribute name="title">
+        <string>Lease</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="searchResultsTab">
+       <attribute name="title">
+        <string>Search Results</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="additionalInformationTab">
+       <attribute name="title">
+        <string>Additional Information</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="surveyTab">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <attribute name="title">
+        <string>Survey</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="stampLandTaxTab">
+       <attribute name="title">
+        <string>Stamp Land Tax</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="mortgageTab">
+       <attribute name="title">
+        <string>Mortgage</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="documentsTab">
+       <attribute name="title">
+        <string>Documents</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="exchangeTab">
+       <attribute name="title">
+        <string>Exchange and Completion</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="financialTab">
+       <attribute name="title">
+        <string>Financial</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="conclusionTab">
+       <attribute name="title">
+        <string>Conclusion and Next Steps</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="generateButton">
+        <property name="text">
+         <string>Create Report</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exitButton">
+        <property name="text">
+         <string>Exit</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
